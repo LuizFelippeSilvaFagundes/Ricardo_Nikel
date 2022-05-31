@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand navbar-light bg-with">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./public/assests/img/nikel-small-logo.png" alt="logo nikel" class="img-fluid" srcset="">
+                    <img src="../assests/img/nikel-small-logo.png" alt="logo nikel" class="img-fluid" srcset="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,9 +29,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <div class="d-flex menu">
-                        <a href="./public/html/home.html"><button class="btn" type="button"><i
+                        <a href="../html/home.html"><button class="btn" type="button"><i
                                     class="bi bi-house-fill fs-4"></i></button></a>
-                        <a href="./public/html/transactions.html"><button class="btn" type="button"><i
+                        <a href="../html/transactions.html"><button class="btn" type="button"><i
                                     class="bi bi-currency-exchange fs-4 color-secondary"></i></i></button></a>
 
                         <div class="dropdown">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col d-flex mt-4 justify-content-end">
                     <div class="text-center">
-                        <img src="./public/assests/img/coins-small.png" alt="image coins-small" sizes="" srcset="">
+                        <img src="../assests/img/coins-small.png" alt="image coins-small" sizes="" srcset="">
                     </div>
                 </div>
             </div>
@@ -86,9 +86,18 @@
                     </div>
                 </div>
             </div>
-
-            <button class="btn button-float" data-bs-toggle="modal" data-bs-target="#transactions-modal"><i
-                    class="bi bi-plus"></i></button>
+                    <div class="button-menu">
+                        <button class="btn button-float" data-bs-toggle="modal" data-bs-target="#transaction-modal"><i class="bi bi-plus"></i></button>
+                        <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i>Conta</i>
+                        </button>
+                        <ul class="dropdown-menu logout" aria-labelledby="dropdownMenuButton1">
+                            <a href="./public/html/index.html" class="dropdown-item" id="button-logout">Criar</a>
+                            <a href="./public/html/index.html" class="dropdown-item" id="button-logout">Depositar</a>
+                            <a href="./public/html/index.html" class="dropdown-item" id="button-logout">Sacar</a>
+                            <a href="./public/html/index.html" class="dropdown-item" id="button-logout">Deletar</a>
+                        </ul>
+                    </div>
 
         </div>
 
@@ -135,6 +144,7 @@
                             </div>
                     </form>
                 </div>
+
             </div>
         </div>
 
